@@ -38,3 +38,14 @@ header {
 .right__section li {
     margin-left: 430px;
 }
+
+/* Добавляем переход для элементов с классами .first-letter и .rest-of-text */
+.rest-of-text {
+    opacity: 0; /* Начальная прозрачность (текст скрыт) */
+    transition: opacity 0.3s ease; /* Длительность и функция распределения для плавного перехода */
+}
+
+/* При наведении мыши изменяем прозрачность на 1 (текст появляется) */
+header:hover .rest-of-text {
+    opacity: 1;
+}

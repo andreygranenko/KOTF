@@ -6,6 +6,7 @@ body {
 
 header {
     display: flex;
+    margin-bottom: 130px;
 }
 
 
@@ -50,3 +51,13 @@ header:hover .rest-of-text {
     opacity: 1;
 }
 
+/* main section */
+
+.primary__main h1 {
+    font-size: 65px;
+    margin-bottom: .2em;
+}
+
+.primary__main p {
+    font-size: 1.3em;
+}

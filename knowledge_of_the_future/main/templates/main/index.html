@@ -1,37 +1,8 @@
-
+{% extends 'main/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
-    <link rel="stylesheet" href="{% static '\main\css\index.css'%}">
-    <title>KOTF</title>
-</head>
+
+{% block body %}
 <body>
-    <header>
-        <div class="left__section">
-            <ul>
-                <li><a href="#">
-                    <span class="first-letter">K</span><span class="rest-of-text">OTF</span>      
-                </a></li>
-                <li><a href="#">
-                    <span class="first-letter">E</span><span class="rest-of-text">DUCATION</span>
-                </a></li>
-                <li><a href="#" style="width: 250px;">
-                    <span class="first-letter">M</span><span class="rest-of-text">OTIVATIONAL SECTION</span>
-                </a></li>
-            </ul>
-        </div>
-        <div class="right__section">
-            <ul>
-                <li><a href="#" style="width: 110px;">
-                    <span class="first-letter">A</span><span class="rest-of-text">BOUT US</span>
-                </a></li>
-            </ul>
-        </div>
-    </header>
     <div class="primary__section">
         <div class="primary__main">
             <h1>
@@ -52,4 +23,4 @@
     </div>
 <script src="{% static '\main\js\index.js'%}"></script>
 </body>
-</html>
+{% endblock %}

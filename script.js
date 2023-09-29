@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
         menuItems.forEach(item => {
             const firstLetter = item.querySelector('.first-letter'),
                   restOfText = item.querySelector('rest-of-text');
+            console.log(firstLetter, restOfText);
+            
             if (firstLetter && restOfText) {
                 restOfText.style.display = 'inline';
             }
@@ -21,16 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
             const firstLetter = item.querySelector('.first-letter'),
                   restOfText = item.querySelector('.rest-of-text');
             if (firstLetter && restOfText) {
-                restOfText.style.display = 'inline';
+                restOfText.style.display = 'none';
             }
         });
     }
 
     handleMouseOut();
-
+    navBar.addEventListener('mouseover', handleMouseOver);
+    navBar.addEventListener('mouseout', handleMouseOut);
     
 
-    navBar.addEventListener('mouseover', e => {
-        console.log('hey');
-    });
+ 
   });

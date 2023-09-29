@@ -6,7 +6,7 @@ body {
 
 header {
     display: flex;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
 
 
@@ -52,6 +52,16 @@ header:hover .rest-of-text {
 }
 
 /* Main section */
+
+.primary__section{
+    display: flex;
+}
+
+.primary__main {
+    margin-right: 50px;
+    padding-top: 50px;
+}
+
 .primary__main h1 {
     font-size: 65px;
     margin-bottom: .2em;
@@ -60,3 +70,20 @@ header:hover .rest-of-text {
 .primary__main p {
     font-size: 1.3em;
 }
+
+button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+.primary__main a {
+    text-decoration: none;
+    color: black;
+}
+/* 
+.primary__img img{
+    width: 500px;
+} */

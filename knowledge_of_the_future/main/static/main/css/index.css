@@ -6,7 +6,7 @@ body {
 
 header {
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 
@@ -58,7 +58,7 @@ header:hover .rest-of-text {
 }
 
 .primary__main {
-    margin-right: 50px;
+    margin-right: 100px;
     padding-top: 50px;
 }
 
@@ -79,11 +79,17 @@ button{
     background-color: transparent;
 }
 
+.primary__main button {
+    border-radius: 12px;
+    padding: 8px 20px;
+    background-color: orange;
+}
+
 .primary__main a {
     text-decoration: none;
     color: black;
 }
-/* 
+
 .primary__img img{
     width: 500px;
-} */
+}

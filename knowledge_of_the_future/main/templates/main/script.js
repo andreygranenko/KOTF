@@ -1,6 +1,7 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function() {
+    console.log('hello')
     // NavBar
     
     // const navBar = document.querySelector('header'),

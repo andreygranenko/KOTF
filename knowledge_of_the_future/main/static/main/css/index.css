@@ -6,6 +6,7 @@ body {
 
 header {
     display: flex;
+    margin-bottom: 150px;
 }
 
 
@@ -49,3 +50,9 @@ header {
 header:hover .rest-of-text {
     opacity: 1;
 }
+
+/* Main section */
+.primary__section h1 {
+    font-size: 65px;
+}
+

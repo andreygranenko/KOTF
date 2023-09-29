@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
     function handleMouseOver() {
         menuItems.forEach(item => {
             const firstLetter = item.querySelector('.first-letter'),
-                  restOfText = item.querySelector('rest-of-text');
-            console.log(firstLetter, restOfText);
-            
+                  restOfText = item.querySelector('.rest-of-text');
+            console.log(firstLetter);
+            console.log(restOfText); 
             if (firstLetter && restOfText) {
                 restOfText.style.display = 'inline';
             }
@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         menuItems.forEach(item => {
             const firstLetter = item.querySelector('.first-letter'),
                   restOfText = item.querySelector('.rest-of-text');
+
             if (firstLetter && restOfText) {
                 restOfText.style.display = 'none';
             }

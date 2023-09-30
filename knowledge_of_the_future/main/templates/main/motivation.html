@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static '\main\css\index.css'%}">
+    <title>Motivation</title>
+{% endblock %}
+
+{% block body %}
+    <body>
+    <h1>Motivation</h1>
+    <h2> It's just test from Teodor </h2>
+    <ul>
+        <li>
+            <a href="{% url 'profile' %}" style="width: 250px;">
+                    <span class="first-letter">Profile</span>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'login' %}" style="width: 250px;">
+                    <span class="first-letter">Log in</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="{% url 'registration' %}" style="width: 250px;">
+                    <span class="first-letter">Registration</span>
+            </a>
+        </li>
+    </ul>
+
+    </body>
+{% endblock %}

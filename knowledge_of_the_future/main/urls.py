@@ -19,6 +19,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index),
-
+    path('', views.index, name = 'main'),
+    path('courses/', views.courses, name = 'courses'),
 ]

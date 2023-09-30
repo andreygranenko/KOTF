@@ -1,27 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="products__header">
-        <h1>ONLINE COURSE: <span id="current__course">MATH</span></h1>
-        <ul>
-            <li>SCIENCE COURSE</li>
-            <li>TECHNOLOGY COURSE</li>
-            <li>ENGINEERING COURSE</li>
-            <li>MATH COURSE</li>
-        </ul>
-        <hr>
-    </div>
-    <div class="products">
+{% extends 'main/base.html' %}
+{% load static %}
 
-    </div>
-    <script src="catalog.js"></script>
-    <script src="products.js"></script>
-</body>
-</html>
+
+{% block head %}
+    <link rel="stylesheet" href="{% static '\main\css\style.css'%}">
+    <title>Document</title>
+{% endblock %}
+
+
+{% block body %}
+    <body>
+        <div class="products__header">
+            <h1>ONLINE COURSE: <span id="current__course">MATH</span></h1>
+            <ul>
+                <li>SCIENCE COURSE</li>
+                <li>TECHNOLOGY COURSE</li>
+                <li>ENGINEERING COURSE</li>
+                <li>MATH COURSE</li>
+            </ul>
+            <hr>
+        </div>
+        <div class="products">
+
+        </div>
+        <script src="{% static '\main\js\catalog.js' %}"></script>
+        <script src="{% static '\main\js\products.js' %}"></script>
+    </body>
+    </html>
+{% endblock %}

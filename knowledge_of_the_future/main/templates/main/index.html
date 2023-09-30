@@ -1,26 +1,33 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
+
+{% block head %}
+    <link rel="stylesheet" href="{% static '\main\css\index.css'%}">
+    <title>KOTF</title>
+{% endblock %}
+
+
 {% block body %}
-<body>
-    <div class="primary__section">
-        <div class="primary__main">
-            <h1>
-                KNOWLEDGE <br>OF THE FUTURE
-            </h1>
-            <p>
-                Easy, Simple and Fast Learning with us  <br>only in ITeasy
-            </p>
-            <button>
-                <a href="#">
-                    Start now!
-                </a>
-            </button>
+    <body>
+        <div class="primary__section">
+            <div class="primary__main">
+                <h1>
+                    KNOWLEDGE <br>OF THE FUTURE
+                </h1>
+                <p>
+                    Easy, Simple and Fast Learning with us  <br>only in ITeasy
+                </p>
+                <button>
+                    <a href="{% url 'courses' %}">
+                        Start now!
+                    </a>
+                </button>
+            </div>
+            <div class="primary__img">
+                <img src="{% static '\main\img\image 5.png'%}" alt="">
+            </div>
         </div>
-        <div class="primary__img">
-            <img src="{% static '\main\img\image 5.png'%}" alt="">
-        </div>
-    </div>
-<script src="{% static '\main\js\index.js'%}"></script>
-</body>
+    <script src="{% static '\main\js\index.js'%}"></script>
+    </body>
 {% endblock %}

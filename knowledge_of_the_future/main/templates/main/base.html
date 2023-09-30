@@ -6,9 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
-    <link rel="stylesheet" href="{% static '\main\css\index.css'%}">
-    <title>KOTF</title>
+
+    {% block head %}
+        <!--  Here will be your head  -->
+    {% endblock %}
+
 </head>
+
+
 <header>
     <div class="left__section">
         <ul>
@@ -33,8 +38,7 @@
 </header>
 
 {% block body %}
-
-
+    <!--  Here will be body of page -->
 {% endblock %}
 
 </html>

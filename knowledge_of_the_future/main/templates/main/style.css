@@ -10,7 +10,7 @@ header {
 }
 
 
-.left__section ul, .right__section ul{
+.left__section ul, .right__section ul, .products__header ul{
     display: flex;
     flex-flow: row nowrap;
     margin: 12px 0 0;
@@ -28,7 +28,7 @@ header {
     color: #000;
 }
 
-.left__section li{
+.left__section li, .products__header li{
     margin-right: 45px;
 }
 
@@ -62,6 +62,7 @@ header:hover .rest-of-text {
     font-size: 1.3em;
 }
 
+/* Courses */
 
 h1 {
     font-weight: normal;
@@ -70,4 +71,8 @@ h1 {
 
 .current__course {
     color: orange;
+}
+
+hr {
+    width: 900px;
 }

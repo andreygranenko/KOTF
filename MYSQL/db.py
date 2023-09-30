@@ -1,48 +1,11 @@
-# import mysql.connector
+from django.db import models
 
-# mydb = mysql.connector.connect (
-#     host="localhost",
-#     user="root",
-#     password='00000',
-#     database="clients"
-#     )
+class Contact(models.Model):
+    name = models.CharField(max_length=30)
+    surenamename = models.CharField(max_length=30)
+    email = models.EmailField(max_length=255)
+    password = models.CharField(max_length=20, null=True)
 
-# mycursor = mydb.cursor()
-# mycursor.execute("SELECT * FROM clients")
-# myresult = mycursor.fetchall()
-# for x in myresult:
-#     print(x)
+    class Meta:
+        db_table = "clients"
 
-import mysql.connector
-
-#establishing the connection
-conn = mysql.connector.connect(
-   user='root', password='00000', host='127.0.0.1', database='clientdb')
-
-#Creating a cursor object using the cursor() method
-cursor = conn.cursor()
-
-#Preparing the query to update the records
-sql = '''INSERT INTO clients (name, surename, email, password)
-VALUES ("Mark", "Deny", "cat@gmail.com", "209876"); '''
-try:
-   # Execute the SQL command
-   cursor.execute(sql)
-   
-   # Commit your changes in the database
-   conn.commit()
-except:
-   # Rollback in case there is any error
-   conn.rollback()
-   
-#Retrieving data
-sql = '''SELECT * from clients'''
-
-#Executing the query
-cursor.execute(sql)
-
-#Displaying the result
-print(cursor.fetchall())
-
-#Closing the connection
-conn.close()

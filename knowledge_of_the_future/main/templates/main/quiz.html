@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block head %}
     <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
-    <link rel="stylesheet" href="quiz_style.css">
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" href="{% static '\main\css\quiz_style.css'%}">
+    <link rel="stylesheet" href="{% static '\main\css\index.css'%}">
+
+    <title>Quizz</title>
+{% endblock %}
+{% block body %}
 <body>
     <div class="quiz__main">
         <div class="wrapper">
@@ -36,6 +39,6 @@
             </div>
         </div>
     </div>
-    <script src="quiz.js"></script>
+    <script src="{% static '\main\js\quiz.js'%}"></script>
 </body>
-</html>
+{% endblock %}

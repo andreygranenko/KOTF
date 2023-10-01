@@ -7,8 +7,8 @@ def index(request):
     return render(request, 'main/index.html')
 
 
-def courses(request):
-    return render(request, 'main/courses.html')
+def quiz(request):
+    return render(request, 'main/quiz.html')
 
 
 def motivation(request):

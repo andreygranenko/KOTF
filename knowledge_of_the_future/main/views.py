@@ -23,5 +23,20 @@ def login(request):
     return render(request, 'main/Profile/login.html')
 
 
+def professions(request):
+    return render(request, 'main/Work/list_of_works.html')
+
+
+def technology(request):
+    return render(request, 'main/Work/technology.html')
+
+def science(request):
+    return render(request, 'main/Work/science.html')
+
+
+def engineer(request):
+    return render(request, 'main/Work/engineer.html')
+
+
 def profile(request):
     return render(request, 'main/Profile/profile.html')

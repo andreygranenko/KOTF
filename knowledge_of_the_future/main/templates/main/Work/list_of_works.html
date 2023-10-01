@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{% static '\main\css\index.css'%}">
+    <title>Professions</title>
+{% endblock %}
+{% block body %}
+    <body>
+        <h1>Professions</h1>
+      <ul>
+        <li>
+            <a href="{% url 'science' %}" style="width: 250px;">
+                    <span class="first-letter">Science</span>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'engineer' %}" style="width: 250px;">
+                    <span class="first-letter">Engineer</span>
+            </a>
+        </li>
+          <li>
+            <a href="{% url 'technology' %}" style="width: 250px;">
+                    <span class="first-letter">Technology</span>
+            </a>
+        </li>
+      </ul>
+    </body>
+{% endblock %}

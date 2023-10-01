@@ -10,6 +10,13 @@ body {
     align-items: center;
 }
 
+.wrapper {
+    padding: 0 50px;
+    border: solid black;
+    border-radius: 10px;
+    box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, .2);
+}
+
 h2 {
     font-size: 35px;
     color: white;
@@ -42,9 +49,14 @@ ul {
     padding: 5px 5px;
 }
 
+span {
+    transition: opacity 0.8s ease;
+}
+
 span:hover {
     background-color: orange;
     border-radius: 10px;
+    transition: opacity 0.3s ease;
 }
 
 li {

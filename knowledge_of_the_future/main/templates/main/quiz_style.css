@@ -17,6 +17,12 @@ body {
     box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, .2);
 }
 
+.chooses {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
 h2 {
     font-size: 35px;
     color: white;
@@ -33,11 +39,11 @@ p {
 }
 
 hr {
-    width: 550px;
+    width: 100%;
 }
 
 ul {
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     margin: 12px 0 0;
@@ -49,11 +55,12 @@ ul {
     padding: 5px 5px;
 }
 
-span {
+.chooses .choose {
     transition: opacity 0.8s ease;
+    padding: 3px 3px;
 }
 
-span:hover {
+.chooses .choose:hover {
     background-color: orange;
     border-radius: 10px;
     transition: opacity 0.3s ease;
@@ -62,4 +69,24 @@ span:hover {
 li {
     flex-basis: 50%;
     margin-bottom: 30px;
+}
+
+.active {
+    background-color: orange;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+
+#nxt {
+    position: absolute;
+    right: 1%;
+    top: 70%;
+    cursor: pointer;
+    padding: 3px 3px;
+}
+
+#nxt:hover {
+    background-color: orange;
+    border-radius: 10px
 }

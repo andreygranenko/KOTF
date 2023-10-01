@@ -24,7 +24,7 @@ def login(request):
 
 
 def professions(request):
-    return render(request, 'main/Work/list_of_works.html')
+    return render(request, 'main/Work/list_of_works_main.html')
 
 
 def technology(request):

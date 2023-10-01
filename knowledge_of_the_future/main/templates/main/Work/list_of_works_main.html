@@ -1,0 +1,75 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block head %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of works</title>
+    <link rel="stylesheet" href="{% static '\main\css\index.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static '\main\css\list_of_works.css'%}">
+{% endblock %}
+{% block body %}
+    <body>
+
+
+        <h2 class="base"> <i>Professions</i> that you may like:</h2>
+
+        <div class="container">
+            <img class="header_img_engin_sub" src="{% static '\main\img\image_16te.png'%}" alt="no img">
+            <ul class="list"> Profession: Math and Statistics </li>
+                <li>1,500 - 2,000 euro/month</li>
+                <li>Entry threshold: 8/10 (based on google info)</li>
+                <li>Training period: 2 years </li>
+                <br>
+
+                <a href="{% url 'math' %}">
+                <button class="btn_info-prof">LEARN MORE</button>
+                </a>
+            </ul>
+
+
+
+        </div>
+        <div class="container">
+            <ul class="list"> Profession: Math and Statistics </li>
+                <li>1,500 - 2,000 euro/month</li>
+                <li>Entry threshold: 8/10 (based on google info)</li>
+                <li>Training period: 2 years</li>
+                <br>
+
+                <a href="{% url 'math' %}">
+                <button class="btn_info-prof">LEARN MORE</button>
+                </a>
+            </ul>
+            <img class="header_img_engin_sub" src="{% static '\main\img\image_16.png'%}" alt="no img">
+
+
+            </div>
+
+            <div class="container">
+                <img class="header_img_engin_sub" src="{% static '\main\img\image_16.png'%}" alt="no img">
+                <ul class="list"> Profession: Statistics </li>
+                    <li>900 -1,400 euro/month</li>
+                    <li>Entry threshold: 7-8/10 (based on google info)</li>
+                    <li>Training period: 4-5 years </li>
+                    <br>
+
+                    <button class="btn_info-prof">LEARN MORE</button>
+
+                </ul>
+
+
+
+            </div>
+            <br>
+            <br>
+            <div class="centered-container">
+                <p class="more_info">Learn about other professions</p>
+                <button class="btn_info-prof">LEARN MORE</button>
+            </div>
+            <br>
+    <br>
+
+    </body>
+{% endblock %}

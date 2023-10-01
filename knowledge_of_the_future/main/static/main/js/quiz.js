@@ -152,11 +152,12 @@ nextBtn.addEventListener('click', e => {
                    (tech >= science && tech >= engineering && tech >= math) ? 'tech' :
                    (engineering >= science && engineering >= tech && engineering >= math) ? 'engineering' : 'math';
         if (maxVariable == 'engineering') {
-            nextBtn.innerHTML = `
-            <a href="/professions/engineer">
-            Show Results
-            </a>
-            `;
+            window.location.href = '/professions/engineer';
+            // nextBtn.innerHTML = `
+            // <a href="/professions/engineer">
+            // Show Results
+            // </a>
+            // `;
         }
     } else {
         showQuestion();

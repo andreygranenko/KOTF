@@ -22,6 +22,12 @@ urlpatterns = [
     path('', views.index, name = 'main'),
     path('courses/', views.courses, name = 'courses'),
     path('motivation/', views.motivation, name = 'motivation'),
+
+    path('professions/', views.professions, name = 'professions'),
+    path('professions/technology', views.technology, name = 'technology'),
+    path('professions/science', views.science, name = 'science'),
+    path('professions/engineer', views.engineer, name = 'engineer'),
+
     path('profile/', views.profile, name = 'profile'),
 
 

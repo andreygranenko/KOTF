@@ -8,8 +8,8 @@
 {% endblock %}
 {% block body %}
     <body>
-        <h1>Professions</h1>
-      <ul>
+        <h1 style="font-size: 45px; text-align: center;">Professions</h1>
+      <ul class="work__list" style=" list-style-type: none; text-align: center;">
         <li>
             <a href="{% url 'science' %}" style="width: 250px;">
                     <span class="first-letter">Science</span>
@@ -26,5 +26,22 @@
             </a>
         </li>
       </ul>
+      <style>
+        .work__list a {
+          text-decoration: none;
+          color: black;
+          font-size: 30px;
+          padding: 5px 8px;
+        }
+
+        .work__list a:hover {
+          background-color: orange;
+          border-radius: 10px
+        }
+
+        .work__list li {
+          margin-bottom: 20px;
+        }
+      </style>
     </body>
 {% endblock %}

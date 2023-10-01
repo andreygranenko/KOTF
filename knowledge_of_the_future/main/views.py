@@ -30,6 +30,11 @@ def professions(request):
 def technology(request):
     return render(request, 'main/Work/technology.html')
 
+
+def math(request):
+    return render(request, 'main/Work/math.html')
+
+
 def science(request):
     return render(request, 'main/Work/science.html')
 

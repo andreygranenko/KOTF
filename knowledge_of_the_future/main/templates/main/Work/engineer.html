@@ -1,10 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'main/base.html' %}
+{% load static %}
 
+
+{% block head %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineer</title>
+    <link rel="stylesheet" href="{% static '\main\css\index.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static '\main\css\engineer.css'%}">
+{% endblock %}
+
+{% block body %}
+<body>
+    
+
+    <h2 class="base">Based on the quiz, best job for you will be:</h2>
+    <h1 class="proffesion">Engineer</h1>
+    <img class="header_img_engin" src="{% static '\main\img\image_15.png'%}"  alt="no img">
+    <p class="img_descrip"><b>Salary: 1,700 euro/month <br>
+        Entry threshold: 6-7/10 (based on google info) <br>
+        Training period: 4 year </b>><br>
+    </p>
+    <div class="container">
+    <ul class="list"> <b>1) What are the salaries of an Engineers?</b> 
+        <li>University of Latvia (LU) </li>
+        <li>Riga Technical University (RTU)         </li>
+        <li>Daugavpils University</li>
+        <li>Ventspils University College</li>
+        <br>
+        
+
+        <b>How many years you need to study to become an engineer:</b> 
+        <li>For a bachelor's degree in engineering you need to study 3-4 years</li>
+        <li>For master's degree - 1-2 additional years</li>
+    </ul>
+    <img class="header_img_engin_sub" src="{% static '\main\img\image_16.png'%}" alt="no img">
+    
+    </div>
+    <div class="container">
+    <img class="header_img_engin_sub" src="{% static '\main\img\image_16_1.png'%}" alt="no img">
+    <ul class="list"> <b>3) Engineering related professions:</b> 
+        <li>Structural Engineer - develops and designs new products or systems. </li>
+        <li>Mechanical Engineer - designs and maintains mechanical systems and machines.</li>
+        <li>Electronic Engineer - specializes in electronic systems and devices.</li>
+        <br>
+        <b>4) Tasks an engineer performs:</b> 
+        <li> - Development of technical drawings and designs.</li>
+        <li> - Calculating and analyzing technical parameters.</li>
+        <li> - Troubleshooting and maintenance of technical systems.</li>
+    </ul>
+    
+    
+    </div>
+    <div class="container">
+       
+        <ul class="list"> <b>5)What will happen to this profession in 10 years:</b> 
+            <li>As technology advances, engineers will be in demand in new fields such as artificial intelligence, green energy, and cybersecurity. </li>
+            <br>
+            <b>6) Why choose to be an engineer:</b> 
+            
+            <li>The engineering profession offers broad career prospects and the opportunity to work in a variety of fields, including medicine, aviation, energy, and others. Engineers can solve complex technical problems and contribute to improving the quality of life for people and the environment.</li>
+            <br>
+            <b>7)Where to find jobs:</b> 
+            <li> - LinkedIn</li>
+            <li> - CV.lv</li>
+
+
+        </ul>
+        
+        
+        </div>
+
+        <div class="centered-container">
+            <p class="more_info">Learn about other professions</p>
+            <button class="btn_info-prof">LEARN MORE</button>
+        </div>
+        <br>
 </body>
-</html>
+{% endblock %}

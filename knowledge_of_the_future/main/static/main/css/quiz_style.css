@@ -90,3 +90,8 @@ li {
     background-color: orange;
     border-radius: 10px
 }
+
+.chooses a {
+    text-decoration: none;
+    
+}

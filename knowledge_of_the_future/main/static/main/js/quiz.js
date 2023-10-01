@@ -127,6 +127,7 @@ let science = 0,
     engineering = 0, 
     math = 0;
 
+
 nextBtn.addEventListener('click', e => {
     pageAnswers.forEach(item => {
         if (item.classList.contains('active')) {
@@ -147,14 +148,23 @@ nextBtn.addEventListener('click', e => {
         }
     });
     if (nextBtn.textContent == 'Show Results') {
-        if (Math.max(science, tech, engineering, math)) {
-            
+        const maxVariable = (science >= tech && science >= engineering && science >= math) ? 'science' :
+                   (tech >= science && tech >= engineering && tech >= math) ? 'tech' :
+                   (engineering >= science && engineering >= tech && engineering >= math) ? 'engineering' : 'math';
+        if (maxVariable == 'engineering') {
+            window.location.href = '/professions/engineer';
+            // nextBtn.innerHTML = `
+            // <a href="/professions/engineer">
+            // Show Results
+            // </a>
+            // `;
         }
     } else {
         showQuestion();
     }
 });
 
+console.log(Math.max(science, tech, engineering, math));
 // pageAnswers.forEach(item => {
 //     item.addEventListener('click', e => {
 //         item.classList.toggle('active');
